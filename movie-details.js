@@ -142,11 +142,10 @@ async function logMovies() {
         `;
         document.querySelector('#detail-movie').insertAdjacentHTML('afterbegin',markup);
       }
-      const showMore = `
+      const showMore = `  
       <li>
-        <div class="movie-card">
-
-          <a href="./movie-details.html">
+        <div class="movie-card" onClick="setCookie(${element.id})">
+          <a href="movie-details.html">
             <figure class="card-banner">
               <img src="https://image.tmdb.org/t/p/w500${element.poster_path}">
             </figure>
@@ -176,10 +175,6 @@ async function logMovies() {
         </div>
       </li>
       `
-      function setCookie(value) {
-        console.log(value);
-        document.cookie = `obj=${value}`;
-    }
       document.querySelector('#test').insertAdjacentHTML('beforeend',showMore);
     });
     clearInterval(timer);
@@ -188,6 +183,10 @@ async function logMovies() {
   return html;
 }
 logMovies();
+function setCookie(value) {
+  console.log(value);
+  document.cookie = `obj=${value}`;
+}
 
 
 
