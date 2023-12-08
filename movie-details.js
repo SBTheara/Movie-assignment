@@ -13,7 +13,6 @@ for (let i = 0; i < navElemArr.length; i++) {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
     document.body.classList.toggle("active");
-
   });
 
 }
@@ -147,7 +146,7 @@ async function logMovies() {
         <div class="movie-card" onClick="setCookie(${element.id})">
           <a href="movie-details.html">
             <figure class="card-banner">
-              <img src="https://image.tmdb.org/t/p/w500${element.poster_path}">
+              <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" >
             </figure>
           </a>
 
