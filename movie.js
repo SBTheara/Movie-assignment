@@ -28,17 +28,16 @@ $(".change").on("click", function () {
 
 async function logMovies() {
     const response = await fetch(
-      "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d73a0bfc31c48972c19c771be4afea27"
+        "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d73a0bfc31c48972c19c771be4afea27"
     );
     const movies = await response.json();
     console.log("movies::::", movies);
-  
+
     let newDiv = "";
     const mv = movies.results;
     for (let i = 0; i < mv.length; i++) {
-      newDiv += `<div class="card movie_card">
-      <img src="https://image.tmdb.org/t/p/w500${mv[i].poster_path
-    }" class="card-img-top" alt="...">
+        newDiv += `<div class="card movie_card">
+      <img src="https://image.tmdb.org/t/p/w500${mv[i].poster_path}" class="card-img-top" alt="...">
         <div class="card-body" onClick="setCookie(${mv[i].id})">
                 <a href="movie-details.html">
                     <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom"
@@ -59,5 +58,6 @@ function setCookie(value) {
     document.cookie = `obj=${value}`;
 }
 logMovies();
-  
-  
+
+
+

@@ -13,7 +13,6 @@ for (let i = 0; i < navElemArr.length; i++) {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
     document.body.classList.toggle("active");
-
   });
 
 }
@@ -52,7 +51,7 @@ async function logMovies() {
     var receivedData = getCookie('obj');
     const mv = movies.results;
     mv.forEach(element => {
-      if(element.id == receivedData){
+      if (element.id == receivedData) {
         const markup = `
             <figure class="movie-detail-banner">
 
@@ -140,14 +139,14 @@ async function logMovies() {
             </a>
           </div>
         `;
-        document.querySelector('#detail-movie').insertAdjacentHTML('afterbegin',markup);
+        document.querySelector('#detail-movie').insertAdjacentHTML('afterbegin', markup);
       }
       const showMore = `  
       <li>
         <div class="movie-card" onClick="setCookie(${element.id})">
           <a href="movie-details.html">
             <figure class="card-banner">
-              <img src="https://image.tmdb.org/t/p/w500${element.poster_path}">
+              <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" >
             </figure>
           </a>
 
@@ -175,11 +174,11 @@ async function logMovies() {
         </div>
       </li>
       `
-      document.querySelector('#test').insertAdjacentHTML('beforeend',showMore);
+      document.querySelector('#test').insertAdjacentHTML('beforeend', showMore);
     });
     clearInterval(timer);
   }, 1000);
-  
+
   return html;
 }
 logMovies();
