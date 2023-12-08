@@ -525,14 +525,16 @@ img {
     justify-content: space-between;
     padding-left: 35px;
 }
+
 .card-body {
-   
+
     background-color: black;
     color: white !important;
 }
-.subtitle{
+
+.subtitle {
     display: flex;
-    
+
 }
 
 

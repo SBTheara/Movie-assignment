@@ -51,7 +51,7 @@ async function logMovies() {
     var receivedData = getCookie('obj');
     const mv = movies.results;
     mv.forEach(element => {
-      if(element.id == receivedData){
+      if (element.id == receivedData) {
         const markup = `
             <figure class="movie-detail-banner">
 
@@ -139,7 +139,7 @@ async function logMovies() {
             </a>
           </div>
         `;
-        document.querySelector('#detail-movie').insertAdjacentHTML('afterbegin',markup);
+        document.querySelector('#detail-movie').insertAdjacentHTML('afterbegin', markup);
       }
       const showMore = `  
       <li>
@@ -174,11 +174,11 @@ async function logMovies() {
         </div>
       </li>
       `
-      document.querySelector('#test').insertAdjacentHTML('beforeend',showMore);
+      document.querySelector('#test').insertAdjacentHTML('beforeend', showMore);
     });
     clearInterval(timer);
   }, 1000);
-  
+
   return html;
 }
 logMovies();
