@@ -1557,6 +1557,13 @@ body.active {
   .movie-detail-banner,
   .details-actions {
     margin: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  .movie-detail-banner img {
+    width: 100%;
+    height: 433px;
+    object-fit: cover;
   }
 
   .download-btn {

@@ -55,7 +55,7 @@ async function logMovies() {
         const markup = `
             <figure class="movie-detail-banner">
 
-            <img src="${element.poster_path}" alt="Free guy movie poster">
+            <img src="${element.poster_path}">
 
             <button class="play-btn">
               <a href="${element.trailer_path}" style="text-decoration: none; color: white"><ion-icon name="play-circle-outline"></ion-icon></a>
