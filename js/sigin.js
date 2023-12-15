@@ -23,5 +23,5 @@ if(isDoneLink){
 }
 const currentUser = localStorage.getItem("currentUser");
 // if(currentUser){
-//     window.location.href = "file:///C:/Users/MBC/Desktop/movie-website-/    movie.html";
+//     window.location.href = "file:///C:/Users/MBC/Desktop/movie-website-/    index.html";
 // }
