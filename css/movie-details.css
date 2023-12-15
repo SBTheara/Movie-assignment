@@ -1011,7 +1011,6 @@ body.active {
 
 
 
-
 /*-----------------------------------*\
    * #MOVIE DETAIL 
   \*-----------------------------------*/
@@ -1035,8 +1034,6 @@ body.active {
 }
 
 .movie-detail-banner img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -1781,6 +1778,17 @@ body.active {
   .download-btn ion-icon {
     font-size: 30px;
     transform: rotate(-0.25turn);
+  }
+  .movie-detail-banner img {
+    width: 100% !important;
+    height: 450px !important;
+    object-fit: cover !important;
+}
+
+  .download-btn {
+    position: absolute;
+    left: 15px;
+    bottom: -80px;
   }
 
 }
