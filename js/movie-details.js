@@ -44,7 +44,7 @@ function getCookie(name) {
 
 async function logMovies() {
   const response = await fetch(
-    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d73a0bfc31c48972c19c771be4afea27"
+    "../data/movie.json"
   );
   const movies = await response.json();
   const timer = setInterval(() => {
@@ -55,10 +55,10 @@ async function logMovies() {
         const markup = `
             <figure class="movie-detail-banner">
 
-            <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt="Free guy movie poster">
+            <img src="${element.poster_path}" alt="Free guy movie poster">
 
             <button class="play-btn">
-              <ion-icon name="play-circle-outline"></ion-icon>
+              <a href="${element.trailer_path}" style="text-decoration: none; color: white"><ion-icon name="play-circle-outline"></ion-icon></a>
             </button>
 
           </figure>
@@ -132,7 +132,7 @@ async function logMovies() {
 
             </div>
 
-            <a href="./assets/images/movie-4.png" download class="download-btn">
+            <a href="${element.trailer_path}" download class="download-btn">
               <span>Download</span>
 
               <ion-icon name="download-outline"></ion-icon>
@@ -146,7 +146,7 @@ async function logMovies() {
         <div class="movie-card" onClick="setCookie(${element.id})">
           <a href="movie-details.html">
             <figure class="card-banner">
-              <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" >
+              <img src="${element.poster_path}" >
             </figure>
           </a>
 
