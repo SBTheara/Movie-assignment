@@ -1557,7 +1557,8 @@ body.active {
   .movie-detail-banner,
   .details-actions {
     margin: 0;
-    width: 100%;
+    width: 160%;
+    height: 100%;
     object-fit: cover;
   }
   .movie-detail-banner img {
