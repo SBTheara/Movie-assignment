@@ -9,7 +9,7 @@
     "redirects": [
         {
             "source": "/",
-            "destination": "/page/movie.html",
+            "destination": "/page/index.html",
             "statusCode": 302
         }
     ]

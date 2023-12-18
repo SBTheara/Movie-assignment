@@ -2,16 +2,16 @@
     "page": 1,
     "results": [
         {
-            "backdrop_path": "../img/spiderman.jpg",
+            "backdrop_path": "../img/jurassic-world.jpg",
             "id": 466419,
             "original_language": "en",
-            "original_title": "SPIDER-MAN: ACROSS THE SPIDER-VERSE",
-            "overview": "After reuniting with Gwen Stacy, Brooklyn's full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
-            "popularity": 1672.034,
-            "poster_path": "../img/spiderman.jpg",
+            "original_title": "Jurassic World Camp Cretaceous",
+            "overview": "Jurassic World Camp Cretaceous follows a group of six teenagers chosen for a once-in-a-lifetime experience at a new adventure camp on the opposite side of Isla Nublar.",
+            "popularity": 1652.034,
+            "poster_path": "../img/jurassic-world.jpg",
             "release_date": "2023-10-18",
-            "title": "SPIDER-MAN: ACROSS THE SPIDER-VERSE",
-            "trailer_path": "../video/spiderman.mp4",
+            "title": "Jurassic World Camp Cretaceous",
+            "trailer_path": "../video/jurassic-world.mp4",
             "video": false,
             "vote_average": 9.7,
             "vote_count": 1372
