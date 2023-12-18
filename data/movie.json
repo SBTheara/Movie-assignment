@@ -2,6 +2,21 @@
     "page": 1,
     "results": [
         {
+            "backdrop_path": "../img/spiderman.jpg",
+            "id": 466419,
+            "original_language": "en",
+            "original_title": "SPIDER-MAN: ACROSS THE SPIDER-VERSE",
+            "overview": "After reuniting with Gwen Stacy, Brooklyn's full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
+            "popularity": 1672.034,
+            "poster_path": "../img/spiderman.jpg",
+            "release_date": "2023-10-18",
+            "title": "SPIDER-MAN: ACROSS THE SPIDER-VERSE",
+            "trailer_path": "../video/spiderman.mp4",
+            "video": false,
+            "vote_average": 9.7,
+            "vote_count": 1372
+        },
+        {
             "backdrop_path": "../img/Killers-of-the-flower-moon.jpg",
             "id": 466420,
             "original_language": "en",
