@@ -7,9 +7,10 @@
 
 body {
     background-color: #3333332d;
-    background: url(../assets/../img/spiderman.jpg);
+    background: url(../assets/../img/poster-background-duf5mprr7kla128s.jpg);
     /* background: url(../img/365-days-this-day.jpg); */
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     background-position-x: center;
     background-attachment: fixed;
@@ -180,8 +181,8 @@ section::before {
     top: 0;
     height: auto;
     padding: 100px;
-    background-color: #02161c;
-    color: #fff;
+    background-color: #00000000;
+    color: #552323;
 }
 
 .sec span {
